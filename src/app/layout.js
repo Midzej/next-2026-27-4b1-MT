@@ -1,3 +1,6 @@
+import "./globals.css";
+import { CounterProvider } from '@/context/CounterContext';
+
 export default function RootLayout({ children }) {
   return (
     <html lang="pl">
@@ -7,7 +10,9 @@ export default function RootLayout({ children }) {
             <strong>Moja Aplikacja Szkolna</strong>
           </nav>
         </header>
-        {children}
+        <CounterProvider>
+          {children}
+        </CounterProvider>
       </body>
     </html>
   );

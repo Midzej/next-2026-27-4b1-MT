@@ -1,5 +1,5 @@
 import Counter from './Counter';
-import GreetingForm from './GreetingFrom';
+import GreetingForm from './GreetingForm';
 
 export default function Dashboard() {
   return (
